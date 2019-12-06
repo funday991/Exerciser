@@ -12,8 +12,7 @@ const Exercise = props => (
             <Link to={`/edit/${props.exercise._id}`}>редактировать</Link> | <a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }}>удалить</a>
         </td>
     </tr>
-)
-  
+);
 
 export default class ExercisesList extends Component {
     constructor(props) {
