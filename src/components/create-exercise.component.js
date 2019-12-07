@@ -104,6 +104,7 @@ export default class CreateExercise extends Component {
                         <label>Описание: </label>
                         <input 
                             type="text"
+                            maxLength={20}
                             required
                             className="form-control"
                             value={this.state.description}
@@ -112,8 +113,9 @@ export default class CreateExercise extends Component {
                     </div>
                     <div className="form-group">
                         <label>Продолжительность (в минутах): </label>
-                        <input 
-                            type="text" 
+                        <input
+                            type="text"
+                            maxLength={5}
                             className="form-control"
                             value={this.state.duration}
                             onChange={this.onChangeDuration}
